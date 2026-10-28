@@ -1,0 +1,25 @@
+algoritmo "Primeiro Programa"
+
+var
+  palavrachave: caracter
+  chute: caracter
+  tentativas: inteiro
+inicio
+
+  tentativas<- 1
+  escreval("Digite a palavra Chave jogador 1: ")
+  leia(palavrachave)
+  limpatela
+  escreval("Digite sua palavra jogador 2: ")
+  leia("chute")
+
+  enquanto chute <> palavrachave faca
+    escreval("Digite novamente jogador 2: ")
+    leia(chute)
+    tentativas <- tentativas + 1
+  fimenquanto
+
+  escreval("A palavra chave era: ", palavrachave)
+  escreval("O jogador 2 acertou em: ", tentativas, " tetativas")
+
+fimalgoritmo
